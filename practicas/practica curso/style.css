@@ -14,6 +14,13 @@ h1{
 }
 p{
     font-size: 20px;
-    color: rgb(127, 146, 255);
+    color: rgb(18, 18, 19);
 
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(224, 151, 221);
 }
