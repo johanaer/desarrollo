@@ -54,6 +54,17 @@ p{
     flex-direction: column;
     align-items: center;
 }
+#nosotros{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#nosotros iframe{
+    padding: 10px;
+    margin: 10px;
+
+}
 .presentacion h1{
     font-size: 35px;
     color: rgb(89, 116, 236);
