@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portafolio de Johana</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
+        <div class="logo">Johana</div>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="theme-switcher">🌞</div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Hola, soy Johana</h1>
+        <p>Desarrolladora web apasionada por el diseño y la tecnología.</p>
+        <a href="#projects" class="cta">Ver mis proyectos</a>
+    </section>
+
+    <section class="about" id="about">
+        <h2>Sobre Mí</h2>
+        <div class="content">
+            <img src="tu-foto.jpg" alt="Foto de Johana">
+            <p>Breve descripción sobre ti, tus estudios, intereses, y lo que te inspira en el desarrollo web.</p>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Proyectos</h2>
+        <div class="project-cards">
+            <!-- Aquí puedes agregar las tarjetas de tus proyectos -->
+            <div class="card">
+                <img src="proyecto1.jpg" alt="Proyecto 1">
+                <h3>Proyecto 1</h3>
+                <p>Descripción breve del proyecto.</p>
+            </div>
+            <!-- Agrega más tarjetas según sea necesario -->
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-list">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%;"></div>
+                </div>
+            </div>
+            <!-- Agrega más habilidades según sea necesario -->
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contacto</h2>
+        <form action="#">
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <textarea name="message" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="social-links">
+            <!-- Agrega íconos de redes sociales aquí -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Johana. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

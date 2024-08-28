@@ -1,0 +1,278 @@
+/* Reset y ajustes básicos */
+body, h1, h2, h3, p, ul, li, a, img, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f0f4f8;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5em;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #00d1b2;
+}
+
+header .theme-switcher {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* Sección Hero */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to bottom, #00d1b2, #00a3a2);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.hero .cta {
+    background-color: #fff;
+    color: #00a3a2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero .cta:hover {
+    background-color: #00c7b0;
+}
+
+/* Sección Sobre Mí */
+.about {
+    padding: 80px 10%;
+    background-color: #fff;
+}
+
+.about .content {
+    display: flex;
+    align-items: center;
+}
+
+.about img {
+    border-radius: 50%;
+    margin-right: 20px;
+    max-width: 200px;
+}
+
+.about p {
+    max-width: 600px;
+}
+
+/* Sección Proyectos */
+.projects {
+    padding: 80px 10%;
+    background-color: #f0f4f8;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.card p {
+    padding: 0 20px 20px;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Sección Habilidades */
+.skills {
+    padding: 80px 10%;
+    background-color: #fff;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.skill {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill h3 {
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #00d1b2;
+    border-radius: 10px;
+}
+
+/* Sección Contacto */
+.contact {
+    padding: 80px 10%;
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact button {
+    background-color: #00d1b2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #00a3a2;
+}
+
+/* Pie de Página (Footer) */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10%;
+    font-size: 0.9em;
+}
+
+/* Modo Oscuro */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f4f8;
+}
+
+body.dark-mode header {
+    background-color: #333;
+}
+
+body.dark-mode .hero {
+    background: linear-gradient(to bottom, #333, #1a1a1a);
+}
+
+body.dark-mode .cta {
+    background-color: #333;
+    color: #00d1b2;
+}
+
+body.dark-mode .about {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .projects {
+    background-color: #333;
+}
+
+body.dark-mode .skills {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .contact {
+    background-color: #333;
+}
+
+body.dark-mode footer {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .card {
+    background-color: #444;
+}
+
+body.dark-mode .skill-bar {
+    background-color: #444;
+}
